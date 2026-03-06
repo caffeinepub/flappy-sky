@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Outfit font */
+@font-face {
+  font-family: "Outfit";
+  src: url("/assets/fonts/Outfit.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+/* Bricolage Grotesque for display headings */
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("/assets/fonts/BricolageGrotesque.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Flappy Sky theme - vivid daytime sky */
+    --background: 0.18 0.02 250;
+    --foreground: 0.98 0 0;
+    --card: 0.14 0.03 255;
+    --card-foreground: 0.98 0 0;
+    --popover: 0.12 0.02 255;
+    --popover-foreground: 0.98 0 0;
+
+    /* Sky blue primary */
+    --primary: 0.72 0.16 240;
+    --primary-foreground: 0.08 0 0;
+
+    /* Warm yellow-orange accent (bird color) */
+    --secondary: 0.78 0.18 65;
+    --secondary-foreground: 0.08 0 0;
+
+    /* Muted overlay */
+    --muted: 0.22 0.03 250;
+    --muted-foreground: 0.72 0.04 240;
+
+    /* Green accent (pipe/ground) */
+    --accent: 0.65 0.18 140;
+    --accent-foreground: 0.08 0 0;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.3 0.05 250;
+    --input: 0.25 0.04 250;
+    --ring: 0.72 0.16 240;
+
+    --chart-1: 0.72 0.16 240;
+    --chart-2: 0.78 0.18 65;
+    --chart-3: 0.65 0.18 140;
+    --chart-4: 0.82 0.15 30;
+    --chart-5: 0.55 0.2 290;
+
+    --sidebar: 0.14 0.03 255;
+    --sidebar-foreground: 0.98 0 0;
+    --sidebar-primary: 0.72 0.16 240;
+    --sidebar-primary-foreground: 0.98 0 0;
+    --sidebar-accent: 0.22 0.03 250;
+    --sidebar-accent-foreground: 0.98 0 0;
+    --sidebar-border: 0.3 0.05 250;
+    --sidebar-ring: 0.72 0.16 240;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Outfit", sans-serif;
+    overflow: hidden;
+  }
+}
